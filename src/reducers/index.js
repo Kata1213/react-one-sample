@@ -1,7 +1,7 @@
-export const authenticationReducer = (state = false, action) => {
+export const authenticationReducer = (state = null, action) => {
   switch (action.type) {
     case 'LOGIN':
-      return action.isSucceed;
+      return action.authentication;
     default:
       return state;
   }

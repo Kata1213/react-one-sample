@@ -10,7 +10,7 @@ import ClassList from './components/class-list';
 import { authenticationReducer } from './reducers';
 
 const store = createStore(combineReducers({
-  isAuthenticated: authenticationReducer
+  authentication: authenticationReducer
 }));
 
 export default () => (
